@@ -1,0 +1,58 @@
+.layout {
+    display: grid;
+    grid-template-columns: 15rem 1fr;
+    grid-template-rows: max-content 1fr;
+    height: 100vh;
+
+
+}
+
+.layout .myHeader {
+    grid-column: 1/3;
+    background-color: #bc4d1a;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 50 px ;
+
+
+}
+
+
+.layout .myHeader h1 {
+    margin: 0;
+    font-size: 50px;
+}
+
+.layout aside {
+    background-color: #09b4df;
+    padding: 1rem;
+}
+
+.layout main {
+    padding: 1rem;
+}
+
+.sidebarMenus {
+    list-style: none;
+    padding: unset;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.sidebarMenus li {
+    background-color: #de0ab7fe;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 20px;
+
+}
+
+.sidebarMenus li:hover {
+    background-color: #ee0d54;
+}
+
