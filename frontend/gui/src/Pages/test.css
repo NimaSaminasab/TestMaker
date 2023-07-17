@@ -1,4 +1,4 @@
-.Test{
+.Test {
     background-color: rgba(156, 234, 212, 0.874);
     color: brown;
     font-size: 30px;
@@ -8,7 +8,21 @@
     border-style: solid;
     border-width: 5px;
 }
-.Test tbody{
+
+.Test tbody {
     font-size: 140px;
-    color: rgb(18, 11, 9); 
+    color: rgb(18, 11, 9);
+}
+
+.questionList {
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.buttonContainer {
+    display : flex;
+    justify-content: center;
+    gap: 1rem;
 }

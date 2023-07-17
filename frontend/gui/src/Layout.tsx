@@ -1,5 +1,7 @@
 import React from 'react';
 import Test from './Pages/test';
+import CreateUser from './Pages/CreateUser';
+import CreateQuestion from './Pages/CreateQuestion';
 
 
 import './Layout.css' 
@@ -14,19 +16,22 @@ const Layout = () => {
             </header>
             <aside>
                 <ul className="sidebarMenus">
-                    <Link to="/test" >
-                        <li>Ta en test</li>
+                    <Link to="/CreateUser">
+                        <li>Opprett bruker</li>
                     </Link>
-                    <Link to="/opplaring">
-                        <li>Opplæring</li>
+                    <Link to="/CreateQuestion">
+                        <li>Opprett spørsmål</li>
                     </Link>
                 </ul>
             </aside>
             <main>
             <Routes>
-                    <Route path="/test" element={<Test/>} ></Route>
-                    <Route path="/opplaring" ></Route>
-                    <Route path="*" element={<Navigate to='/test'></Navigate>}></Route>
+                    <Route path="/createUser" element={<CreateUser/>}></Route>
+                    <Route path="/test"       element={<Test/>} ></Route>
+                    
+                    <Route path="/createQuestion" element={<CreateQuestion/>}></Route>
+                    
+                    <Route path="*" element={<Navigate to='/createUser'></Navigate>}></Route>
             
             </Routes>
             </main>
